@@ -6,8 +6,19 @@ import ReactDOM from "react-dom/client";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import Navbar from "./component/navbar.jsx";
+import Footer from "./component/footer.jsx";
+import Card from "./component/Card.jsx";
+import Jumbotron from "./component/Jumbotron.jsx";
+import Cards from "./component/Cards.jsx";
 
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+ReactDOM.createRoot(document.getElementById('app')).render(
+    <>
+    <Navbar/>
+    <Jumbotron/>
+    <Cards/>
+    <Footer/>
+    </>
+);
 
